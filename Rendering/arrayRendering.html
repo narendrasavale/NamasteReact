@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <div id="lists"></div>
+
+    <script>
+        const lists = React.createElement('ol', {},
+            [React.createElement('li',{}, 'One'),
+             React.createElement('li',{},'two'),
+             React.createElement('li',{}, 'Three'),
+             React.createElement('li',{},'Four'),
+             React.createElement('li',{}, 'Five'),
+             React.createElement('li',{},'Six'),
+            ],
+            [React.createElement('li',{}, 'One'),
+             React.createElement('li',{},'two'),
+             React.createElement('li',{}, 'Three'),
+             React.createElement('li',{},'Four'),
+             React.createElement('li',{}, 'Five'),
+             React.createElement('li',{},'Six'),
+            ],
+        )
+
+        const listsRoot = ReactDOM.createRoot(document.getElementById('lists'));
+
+        listsRoot.render(lists)
+    </script>
+</body>
+</html>

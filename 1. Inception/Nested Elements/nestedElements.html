@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <div id="form"></div>
+
+    <script>
+        const form = React.createElement('form', {}, 
+        React.createElement('label', {}, 'First Name'))
+
+        const root = ReactDOM.createRoot(document.getElementById('form'))
+        root.render(form)
+    </script>
+</body>
+</html>

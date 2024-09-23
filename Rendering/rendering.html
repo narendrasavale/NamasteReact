@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <div id="label"></div>
+    <div id="input"></div>
+
+    <script>
+        const userNamelabel = React.createElement('lable', {}, "User Name")
+        const labelroot = ReactDOM.createRoot(document.getElementById('label'))
+        labelroot.render(userNamelabel)
+
+        const passwordinput = React.createElement('input', {type: 'password', placeholder: 'Enter your password'})
+        inputroot = ReactDOM.createRoot(document.getElementById('input'))
+        inputroot.render(passwordinput)
+    </script>
+
+</body>
+</html>

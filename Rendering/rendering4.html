@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <div id="form"></div>
+
+    <script>
+        const form = React.createElement('form', {target: '_blank',},
+            React.createElement('label', {htmlFor: 'username'}, 'Full Name'),
+            React.createElement('br'),
+            React.createElement('input', {type: 'password', placeholder: 'Enter your password'}),
+
+            React.createElement('label', {htmlFor: 'password'}, 'Password'),
+            React.createElement('input', {type: 'password', placeholder: 'enter your password'}),
+        );
+
+        formRoot = ReactDOM.createRoot(document.getElementById('form'))
+        formRoot.render(form)
+
+    </script>
+</body>
+</html>

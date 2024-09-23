@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <div id="root"></div>
+
+    <script>
+        const name = React.createElement('img',
+         {src: 'https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2024-06/240613-conor-mcgregor-2021-ac-618p-72c1b9.jpg'},
+         
+        );
+        const root = ReactDOM.createRoot(document.getElementById('root'))
+        root.render(name)
+    </script>
+</body>
+</html>
